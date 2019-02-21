@@ -10,7 +10,9 @@
     3. Pull down the challenge: <br/>
      `git pull --no-edit upstream <challenge_branch>`
     4. Complete the challenge
-    5. Checkout master branch and merge challenge branch:<br/>
+    5. Add and commit your changes
+    `git add . && git commit -m "<insert commit message>"`
+    6. Checkout master branch and merge challenge branch:<br/>
     `git checkout master && git merge <challenge_branch>`
-    1. Push to master in your fork:<br/>
+    7. Push to master in your fork:<br/>
      `git push origin master`
