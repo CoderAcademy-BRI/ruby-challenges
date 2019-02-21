@@ -1,5 +1,3 @@
-# Largest Number
-#
 # Write a method that will take two numbers,
 # and return whichever is the largest.
 #
@@ -10,7 +8,13 @@
 # Check your solution by filling in the folowing table:
 # number_1 || number_2 || expected || actual
 # 
-# If your stuck feel free to work togeather
+# If your stuck try working togeather
+# 
+# Beast Mode:
+# If you complete the challenge, feel free to come up
+# with your own examples and test corner cases.
+# 
+# Examples - what if both numbers are equal or are strings?
 
 def largest_number (number_1, number_2)
   # Your code here
