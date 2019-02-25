@@ -15,7 +15,7 @@ def sum_numbers (numbers)
 end
 
 
-# Beast Mode:
+# OPTIONAL:
 # Go to the tests folder and open 04_sum_numbers_test.rb.
 # Read over the tests and see if you can understand them.
 
