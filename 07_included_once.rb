@@ -18,6 +18,6 @@
 # ruby tests/14_included_once_test.rb
 #
 
-def includedOnce (haystack, needle)
+def included_once (haystack, needle)
   # Your code here
 end
