@@ -1,5 +1,8 @@
 # Palindrome
 
+# A palindrome is a string that is exactly the same forwards
+# as it is backwards, like "mom" or "racecar".
+
 # Add tests to the 16_palindrome_test.rb file, inside the test folder.
 # The test will check your method takes a word as a string and return 
 # a boolean indicating whether or not the word is a palindrome.
