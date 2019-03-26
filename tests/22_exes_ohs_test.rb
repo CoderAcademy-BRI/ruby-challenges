@@ -19,7 +19,7 @@ class ExesOhsTest < Test::Unit::TestCase
     assert_equal(false, exes_and_ohs("eEf"))
   end
   def test_hard_more_than_two_chars
-    assert_equal(true, exes_and_ohs("ooxxe"))
+    assert_equal(false, exes_and_ohs("ooxxe"))
     assert_equal(false, exes_and_ohs("abc"))
   end
 end
