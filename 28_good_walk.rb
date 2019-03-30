@@ -24,6 +24,5 @@
 
 def good_walk(walk)
     # your code goes here
-    return ((walk.length == 10) and (walk.count("n") == walk.count("s")) and (walk.count("e") == walk.count("w")))
 end
 
