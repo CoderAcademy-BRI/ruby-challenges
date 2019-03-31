@@ -1,3 +1,6 @@
+# Shortest walk
+# Difficulty: hard
+
 # A man was given directions to go from one point to another.
 # The directions were "NORTH", "SOUTH", "WEST", "EAST". 
 # Clearly "NORTH" and "SOUTH" are opposite, "WEST" and "EAST" too. 
@@ -37,6 +40,8 @@
 # Examples
 # shortest_walk(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]) # => ["WEST"]
 # shortest_walk(["NORTH", "SOUTH", "EAST", "WEST"]) # => []
+
+# The test with the challenge use rspec
 
 def shortest_walk(walk)
     # your code goes here
