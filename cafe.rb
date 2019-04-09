@@ -1,6 +1,7 @@
 # This challenge has three parts. Use all you have learned to
 # implement the solution. Use methods to keep your code DRY and
 # clean. Use data structures that are appropriate.
+# Make notes for anything you are unsure about.
 
 # Part 1
 # You are working at a cafe where you have a current backlog of orders:
