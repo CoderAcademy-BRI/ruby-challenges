@@ -37,7 +37,7 @@ describe "should return 3 when three steps" do
 end
 
 describe "should return 4 when four steps" do
-    it "should return 4 when s is '1000101'" do
+    it "should return 4 when s is '1000100'" do
         expect(bin_flip("1000100")).to eq(4)
     end
 end
