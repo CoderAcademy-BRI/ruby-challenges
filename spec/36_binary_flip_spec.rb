@@ -1,5 +1,4 @@
-# require_relative '../36_binary_flip'
-require_relative '../../../janel/binary_string'
+require_relative '../36_binary_flip'
 
 describe "should return 0 when s is all zeros" do
     it "should return 0 when s is '0000'" do
