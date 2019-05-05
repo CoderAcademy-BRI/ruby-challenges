@@ -28,4 +28,7 @@ describe "should return correct reduction for 3 element array" do
   it "should return 19 for [-3,9,4]" do
     expect(reduce_pyramid([-3,9,4])).to eq(19)
   end
+  it "should return 20 for [1,2,3,4]" do
+    expect(reduce_pyramid([1,2,3,4])).to eq(20)
+  end
 end
