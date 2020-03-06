@@ -91,7 +91,10 @@ def create_order(order_hash)
     # Next, we are updating the order_hash values with the values from the temp_array.
     # if temp_array.size == order_hash.keys.size
         order_hash.each_with_index do |(k, v), i|
-        temp_array.each_with_index { |val, index| order_hash[k] = temp_array[i] if i == index }
+        puts "Inside the each_with_index for hash"
+        temp_array.each_with_index { |val, index| 
+            order_hash[k] = temp_array[i] if i == index 
+        }
         end
     # end
     return order_hash   
