@@ -85,19 +85,16 @@ def create_order(order_hash)
     profit = {"l" => 2, "s" => 2, "t" => 2.5}
     temp_array = Array.new
     order_hash.values.each_index do |i|
-        temp_array = order_hash.values[i] * profit.values[i]
+        temp_array[i] = order_hash.values[i] * profit.values[i]
     end
-    puts temp_array
     # Next, we are updating the order_hash values with the values from the temp_array.
-    # if temp_array.size == order_hash.keys.size
+    if temp_array.size == order_hash.keys.size
         order_hash.each_with_index do |(k, v), i|
-        puts "Inside the each_with_index for hash"
-        temp_array.each_with_index { |val, index| 
-            order_hash[k] = temp_array[i] if i == index 
+        temp_array.each_with_index { |val, index| order_hash[k] = temp_array[i] if i == index 
         }
         end
-    # end
-    return order_hash   
+    end
+    return order_hash
 end
 
 def main
