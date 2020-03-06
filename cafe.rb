@@ -81,6 +81,7 @@ end # end of get_order
 def create_order(order_hash)
     # Here we are just multiplying the profit for each order by the total order for each of the items.
     # sample order_hash = {"l"=>1, "s"=>2, "t"=>3}
+    puts "Order_hash is : #{order_hash}"
     profit = {"l" => 2, "s" => 2, "t" => 2.5}
     temp_array = Array.new
     order_hash.values.each_index do |i|
