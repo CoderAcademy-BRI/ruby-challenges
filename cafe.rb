@@ -51,3 +51,40 @@
 # 1 tea
 # Order total: $11.00
 
+# Part 1
+def get_order # returns the item chosen and the number as an array
+    order_hash = Hash.new
+    options = ["l", "s", "t", "q"]
+    while 1
+        puts "What would you like to order (latte, scone, tea)? Type (q)uit to quit."
+        puts "\n latte (l) \n scone (s) \n tea (t) \n quit (q)"
+        item = gets.chomp
+        return if item == "q"
+        if options.include?(item) == true
+            puts "how many would you like to order?"
+            count = gets.chomp.to_i
+        else
+            puts "Sorry ! we do not serve that \n"
+        end 
+        if order_hash.keys.include?(item) == true
+            order_hash[item] += count
+        else
+            order_hash[item] = count
+        end
+        puts "Would you like to order anything else? (y)es / (n)o \n"
+        yes_or_no = gets.chomp
+        return order_hash if yes_or_no == "n"
+    end # end of while loop
+    return order_hash
+end # end of get_order
+
+def create_order(order_hash)
+    # sample order_hash = {"l"=>1, "s"=>2, "t"=>3}
+    profit = {"l" => 2, "s" => 2, "t" => 2.5}
+    order_hash.values.each_index do |i|
+        temp_array = order_hash.values[i] * profit.values[i]
+    end
+    order_hash.keys temp_array
+end
+
+
